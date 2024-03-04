@@ -1,19 +1,18 @@
-class Student{
-  
+class Student {
   String _studentName;
   String _studentSurname;
 
-  
-  Student(this._studentName,this._studentSurname);
-  
-  String getName(){
+  Student(this._studentName, this._studentSurname);
+
+  String get fullname {
     return '$_studentName  $_studentSurname';
   }
-  
-  
-  void setName({required String name, required String surname}){    
-    this._studentName=name;
-    this._studentSurname=surname;
+
+  set name(String valueName) {
+    this._studentName = valueName;
   }
-  
+
+  set surname(String valueSurname) {
+    this._studentSurname = valueSurname;
+  }
 }
